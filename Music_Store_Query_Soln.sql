@@ -139,8 +139,6 @@ ORDER BY 5 DESC;
 with the highest amount of purchases. Write a query that returns each country along with the top Genre. For countries where 
 the maximum number of purchases is shared return all Genres. */
 
-/* Steps to Solve:  There are two parts in question- first most popular music genre and second need data at country level. */
-
 /* Method : Using CTE */
 
 WITH popular_genre AS 
@@ -163,9 +161,6 @@ SELECT * FROM popular_genre WHERE RowNo <= 1
 /* Q11: Write a query that determines the customer that has spent the most on music for each country. 
 Write a query that returns the country along with the top customer and how much they spent. 
 For countries where the top amount spent is shared, provide all customers who spent this amount. */
-
-/* Steps to Solve:  Similar to the above question. There are two parts in question- 
-first find the most spent on music for each country and second filter the data for respective customers. */
 
 /* Method : using CTE */
 
